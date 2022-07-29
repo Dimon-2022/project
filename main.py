@@ -27,10 +27,35 @@ class Calculator:
         print(a * b)
 
     def divide(self, a, b):
-        if b == 0:
-            print('Не можна подiлити на 0')
-        else:
+        try:
             print(a / b)
+        except ZeroDivisionError:
+            print('Дiллення на 0 заборонено!!')
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+       # if b == 0:
+           # print('Не можна подiлити на 0')
+        #else:
+          #  print(a / b)
 
 
 while True:
